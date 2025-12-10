@@ -1,16 +1,133 @@
-# React + Vite
+# React Profile Card Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### A simple, reusable React component for displaying user profile information, featuring a profile picture, name, description, and a follow button. Built with Vite.js.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project provides a standalone and easily configurable `Card` component for displaying a user's profile summary. It's a great starting point for building lists of users, team directories, or contact cards in any React application.
 
-## React Compiler
+### Key Features:
+* **Reusable:** Configure with simple props (`profilePicUrl`, `name`, `description`).
+* **Actionable:** Includes a functional "Follow" button placeholder.
+* **Modern Setup:** Built using Vite for fast development and bundling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📄 File Structure
 
-## Expanding the ESLint configuration
+```
+src/
+├── components/
+│   ├── Card.jsx      # The main React component
+│   └── Card.css      # Component-specific styles
+└── App.jsx           # Example usage of the Card component
+└── main.jsx          # Root entry point
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Installation and Setup
+
+Follow these steps to get a local copy of the project running.
+
+### Prerequisites
+
+You need to have Node.js and npm (or yarn/pnpm) installed on your system.
+
+### 1. Clone the repository
+
+```bash
+git clone [https://github.com/amna-mohsin/react-card-component.git](https://github.com/amna-mohsin/react-card-component.git)
+cd react-profile-card-component
+````
+
+### 2\. Install dependencies
+
+```bash
+npm install 
+# or 
+yarn install
+```
+
+### 3\. Start the development server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The application will typically be available at `http://localhost:5173`.
+
+##  Component Usage
+
+The `Card` component is designed to be highly reusable by accepting data through props.
+
+### `Card.jsx` Component Definition:
+
+```jsx
+import React from 'react';
+import './Card.css';
+
+const Card = ({ profilePicUrl, name, description }) => {
+    // ... component logic here
+};
+
+export default Card;
+```
+
+### Example Usage in `App.jsx`:
+
+```jsx
+import React from 'react';
+import Card from './components/Card';
+
+const App = () => {
+    return (
+        <div className="card-grid">
+            <Card
+                profilePicUrl="[URL_TO_IMAGE]"
+                name="Jane Doe"
+                description="Frontend Developer and React enthusiast."
+            />
+            <Card
+                profilePicUrl="[URL_TO_ANOTHER_IMAGE]"
+                name="John Smith"
+                description="UX Designer focusing on clean interfaces."
+            />
+        </div>
+    );
+};
+
+export default App;
+```
+
+## **Available Scripts**
+
+In the project directory, you can run:
+
+* **`npm run dev`**: Runs the app in development mode.
+* **`npm run build`**: Builds the app for production into `dist/`.
+* **`npm run preview`**: Preview the production build locally.
+
+For more details, see the [Vite documentation](https://vitejs.dev/guide/).
+
+---
+
+## **Learn More**
+
+* [React Documentation](https://reactjs.org/)
+* [Vite Documentation](https://vitejs.dev/)
+
+---
+
+## **Owner**
+
+* Developed and maintained by **Amna Mohsin**
+* For collaborations or inquiries, connect on [LinkedIn](https://www.linkedin.com/in/amna-m98/)
+
+---
+
+## **License**
+
+This project is **open-source** and free to use.
+
+---
+
