@@ -11,7 +11,7 @@ This project provides a standalone and easily configurable `Card` component for 
 * **Actionable:** Includes a functional "Follow" button placeholder.
 * **Modern Setup:** Built using Vite for fast development and bundling.
 
-## 📄 File Structure
+## File Structure
 
 ```
 src/
