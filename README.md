@@ -1,6 +1,6 @@
 # React Profile Card Component
 
-### A simple, reusable React component for displaying user profile information, featuring a profile picture, name, description, and a follow button. Built with Vite.js.
+ A simple, reusable React component for displaying user profile information, featuring a profile picture, name, description, and a follow button. Built with Vite.js.
 
 ## Overview
 
